@@ -34,4 +34,4 @@ develops the statewide alert if at least five zipcodes are in alert state. In ad
 application also offers logic to route patients to appropriate facilities using proper apis, if
 warranted, or determine if they should stay at home. It also provides methods to report on
 both individual patient information and provides up-to-date information on hospital status,
-such as available beds.
+such as available beds. But this design is definitely not scalable as the load increases using the graph database alone. For the scalability, the design should accomodate complex event processing database systems like Siddhi.
